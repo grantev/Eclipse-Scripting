@@ -1,2 +1,2 @@
-# SFPTI
+# Eclipse-Scripting
 ESAPI
