@@ -24,6 +24,7 @@ namespace VMS.TPS
             // TODO : Add here the code that is called when the script is launched from Eclipse.
             PlanSetup planSetup = context.PlanSetup;
             PlanSetup plan = context.ExternalPlanSetup;
+            MessageBox.Show(planSetup.Id);
 
         }
     }
