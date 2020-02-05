@@ -25,7 +25,6 @@ namespace PlanName
 	{
 		public ScriptContext Context;
 		public PlanSetup ps ;
-		
 		public UserControl1()
 		{
 			InitializeComponent();
@@ -33,7 +32,7 @@ namespace PlanName
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 			ps = Context.PlanSetup;
-			MessageBox.Show(ps.Id);
+			T1.Text= ps.Id;
 		}
 	}
 }

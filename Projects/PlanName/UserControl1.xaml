@@ -9,8 +9,9 @@
 	<Grid Background="White" Margin="3,0,0,0">
 		<StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="0,43,0,0">
 			<Label Content="Display Plan Name:"/>
-			<TextBox Width="256" />
-			<Button Content="Update"/>
+			<TextBlock Name="T1"  />
+			<Label Width="256"></Label>
+			<Button Content="Update" Click="Button_Click"/>
 
 		</StackPanel>
 
