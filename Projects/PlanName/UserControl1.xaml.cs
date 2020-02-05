@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VMS.TPS.Common.Model.API;
+using VMS.TPS.Common.Model.Types;
+
 
 namespace PlanName
 {
@@ -20,9 +23,17 @@ namespace PlanName
 	/// </summary>
 	public partial class UserControl1 : UserControl
 	{
+		public ScriptContext Context;
+		public PlanSetup ps ;
+		
 		public UserControl1()
 		{
 			InitializeComponent();
+		}
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			ps = Context.PlanSetup;
+			MessageBox.Show(ps.Id);
 		}
 	}
 }

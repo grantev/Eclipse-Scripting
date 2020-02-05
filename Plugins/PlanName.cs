@@ -12,20 +12,28 @@ using VMS.TPS.Common.Model.Types;
 
 namespace VMS.TPS
 {
-    public class Script
-    {
-        public Script()
-        {
-        }
+	public class Script
+	{
+		public Script()
+		{
+		}
 
-        [MethodImpl(MethodImplOptions.NoInlining)]
-        public void Execute(ScriptContext context /*, System.Windows.Window window, ScriptEnvironment environment*/)
-        {
-            // TODO : Add here the code that is called when the script is launched from Eclipse.
-            PlanSetup planSetup = context.PlanSetup;
-            PlanSetup plan = context.ExternalPlanSetup;
-            MessageBox.Show(planSetup.Id);
+		[MethodImpl(MethodImplOptions.NoInlining)]
+		public void Execute(ScriptContext context, Window window /*, ScriptEnvironment environment*/)
+		{
+			// TODO : Add here the code that is called when the script is launched from Eclipse.
 
-        }
-    }
+			PlanSetup planSetup = context.PlanSetup;
+			PlanSetup plan = context.ExternalPlanSetup;
+			//MessageBox.Show(planSetup.Id);
+			//class PlanName
+			var UserControl1 = new PlanName.UserControl1();
+			UserControl1.Context = context;
+
+			window.Content = UserControl1;
+		}
+
+
+
+	}
 }
