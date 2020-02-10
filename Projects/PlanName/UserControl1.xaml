@@ -12,7 +12,9 @@
 			<TextBlock Name="T1"  />
 			<Label Width="256"></Label>
 			<Button Content="Update" Click="Button_Click"/>
-
+			<Label Content=" "/>			
+			<Button Content=" Reset " Click="Button_Click_Reset"/>
+			
 		</StackPanel>
 
 

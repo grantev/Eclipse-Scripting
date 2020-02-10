@@ -34,5 +34,10 @@ namespace PlanName
 			ps = Context.PlanSetup;
 			T1.Text= ps.Id;
 		}
+		private void Button_Click_Reset(object sender, RoutedEventArgs e)
+		{
+			ps = null;
+			T1.Text = null;
+		}
 	}
 }
