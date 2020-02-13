@@ -31,7 +31,12 @@ namespace VMS.TPS
 			UserControl1.Context = context;
 
 			window.Content = UserControl1;
+			
+
 		}
+
+
+	}
 
 
 
