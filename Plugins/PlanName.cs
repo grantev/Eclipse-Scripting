@@ -16,16 +16,19 @@ namespace VMS.TPS
 	{
 		public Script()
 		{
+            // Not sure if this is needed.
 		}
 
 		[MethodImpl(MethodImplOptions.NoInlining)]
 		public void Execute(ScriptContext context, Window window /*, ScriptEnvironment environment*/)
 		{
 			// TODO : Add here the code that is called when the script is launched from Eclipse.
-
-			PlanSetup planSetup = context.PlanSetup;
-			PlanSetup plan = context.ExternalPlanSetup;
-			//MessageBox.Show(planSetup.Id);
+			Patient patient = context.Patient;
+			Course course = context.Course;
+	
+			PlanSetup plansetup = context.PlanSetup;
+			PlanSetup externalplansetup = context.ExternalPlanSetup;
+			//MessageBox.Show(plansetup.Id);
 			//class PlanName
 			var UserControl1 = new PlanName.UserControl1();
 			UserControl1.Context = context;
@@ -40,5 +43,5 @@ namespace VMS.TPS
 
 
 
-	}
+
 }
